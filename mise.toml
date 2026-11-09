@@ -1,0 +1,19 @@
+[tools]
+bun = "latest"
+node = "22"
+
+[tasks.test]
+description = "Run unit tests"
+run = "bun run test"
+
+[tasks.lint]
+description = "Run linter"
+run = "bun run lint"
+
+[tasks.check]
+description = "Run biome check"
+run = "bun run check"
+
+[tasks.format]
+description = "Format files"
+run = "bun run format"

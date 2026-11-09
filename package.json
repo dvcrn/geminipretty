@@ -1,0 +1,54 @@
+{
+  "name": "geminipretty",
+  "version": "1.0.0",
+  "description": "A CLI tool for pretty-printing streamed JSON output from Antigravity / Gemini CLI (--output-format stream-json)",
+  "bin": {
+    "geminipretty": "./bin/geminipretty.js"
+  },
+  "scripts": {
+    "test": "bun test",
+    "lint": "biome lint .",
+    "format": "biome format --write .",
+    "check": "biome check .",
+    "format:check": "biome format ."
+  },
+  "keywords": [
+    "cli",
+    "json",
+    "pretty",
+    "stream",
+    "gemini",
+    "antigravity",
+    "agy",
+    "ai",
+    "conversation",
+    "logs",
+    "formatting",
+    "colors",
+    "terminal"
+  ],
+  "author": "David Mohl <git@d.sh> (https://github.com/dvcrn)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dvcrn/geminipretty.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dvcrn/geminipretty/issues"
+  },
+  "homepage": "https://github.com/dvcrn/geminipretty#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "bin/",
+    "parser.js",
+    "README.md"
+  ],
+  "dependencies": {
+    "cli-color": "^2.0.4"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.6.6"
+  }
+}
